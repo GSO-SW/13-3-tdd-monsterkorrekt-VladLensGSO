@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterAG", "MonsterAG\MonsterAG.csproj", "{D44A7871-DFA9-4634-85E2-4F9C283F63AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterAGTests", "MonsterAGTests\MonsterAGTests.csproj", "{0402493A-1CA4-46FB-9371-2651A9F9A1DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D44A7871-DFA9-4634-85E2-4F9C283F63AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44A7871-DFA9-4634-85E2-4F9C283F63AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44A7871-DFA9-4634-85E2-4F9C283F63AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44A7871-DFA9-4634-85E2-4F9C283F63AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0402493A-1CA4-46FB-9371-2651A9F9A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0402493A-1CA4-46FB-9371-2651A9F9A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0402493A-1CA4-46FB-9371-2651A9F9A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0402493A-1CA4-46FB-9371-2651A9F9A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59D02548-9BBF-4CE4-B098-257C336FA079}
+	EndGlobalSection
+EndGlobal
