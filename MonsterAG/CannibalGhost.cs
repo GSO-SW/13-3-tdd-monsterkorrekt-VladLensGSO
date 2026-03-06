@@ -21,6 +21,7 @@ namespace MonsterAG
             else
             {
                 size += ghostToEat.Size;
+                ghostToEat.Size = 0;
             }
                 
         }

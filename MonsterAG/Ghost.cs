@@ -40,7 +40,7 @@ namespace MonsterAG
 
         public virtual string Haunt()
         {
-            return name + "sagt: 'Buh'";
+            return name + " sagt: 'Buh'";
         }
     }
 }
