@@ -8,6 +8,7 @@ namespace MonsterAG
 {
     public class CannibalGhost : Ghost
     {
+        bool LastGhostWasSlime;
         public CannibalGhost(string name) : base(name)
         {
         }
@@ -16,14 +17,36 @@ namespace MonsterAG
         {
             if (ghostToEat == null)
             {
-                throw new ArgumentNullException(nameof(ghostToEat), "Der Geist, den der Kannibale essen möchte, darf nicht null sein.");
+                throw new ArgumentNullException("Der Geist, den der Kannibale essen möchte, darf nicht null sein.");
             }
-            else
+            else if (ghostToEat == this)
             {
+            }
+            else if (ghostToEat is SlimeGhost)
+            {
+                LastGhostWasSlime = true;
                 size += ghostToEat.Size;
                 ghostToEat.Size = 0;
             }
-                
+            else
+            {
+                LastGhostWasSlime = false;
+                size += ghostToEat.Size;
+                ghostToEat.Size = 0;
+            }
+
+        }
+
+        public override string Haunt()
+        {
+            if (LastGhostWasSlime)
+            {
+                return "*Rülps* ...lecker Schleim!" + base.Haunt();
+            }
+            else
+            {
+                return base.Haunt();
+            }
         }
     }
 }

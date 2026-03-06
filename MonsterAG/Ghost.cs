@@ -14,8 +14,16 @@ namespace MonsterAG
 
         public Ghost(string name)
         {
-            this.name = name;
-            this.size = 1;
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentException("Der Name eines Geistes darf nicht leer oder nur aus Leerzeichen bestehen.");
+            }
+            else
+            {
+                this.name = name;
+                this.size = 1;
+            }
+                
         }
 
         public string Name
@@ -34,7 +42,15 @@ namespace MonsterAG
             }
             set
             {
-               size = value;
+                if (value < 0)
+                {
+                    size = 0;
+                }
+                else
+                {
+                    size = value;
+                }
+                    
             }
         }
 
